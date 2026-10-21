@@ -1,0 +1,104 @@
+{
+  "first_day": "2019-01-01",
+  "last_day": "2026-09-30",
+  "n_days": 2827,
+  "annual_totals": {
+    "2019": 10424955,
+    "2020": 10434167,
+    "2021": 10941264,
+    "2022": 11505872,
+    "2023": 8531168,
+    "2024": 8768238,
+    "2025": 9066366
+  },
+  "record_day": "2020-05-30",
+  "record_hires": 70170,
+  "jan_sep_2026": 7146940,
+  "jan_sep_2025": 6964326,
+  "jan_sep_2019": 8251768,
+  "jan_sep_2026_vs_2025_pct": 2.6,
+  "summer_workday_median_dry": 32950,
+  "summer_workday_median_wet5mm": 25534,
+  "wet_day_drop_pct": 22.5,
+  "hires_per_degC_workdays": 741,
+  "mean_by_weekday": {
+    "Mon": 26826,
+    "Tue": 29066,
+    "Wed": 29187,
+    "Thu": 28992,
+    "Fri": 27182,
+    "Sat": 26294,
+    "Sun": 23464
+  },
+  "bank_holiday_mean": 22273,
+  "workday_mean": 28281,
+  "cv_mean": {
+    "lightgbm": {
+      "mae": 2450,
+      "mape": 10.9
+    },
+    "ridge": {
+      "mae": 2869,
+      "mape": 12.9
+    },
+    "seasonal_naive": {
+      "mae": 3755,
+      "mape": 17.7
+    }
+  },
+  "holdout": {
+    "seasonal_naive": {
+      "mae": 3329,
+      "mape": 16.1
+    },
+    "ridge": {
+      "mae": 2811,
+      "mape": 12.7
+    },
+    "lightgbm": {
+      "mae": 2242,
+      "mape": 9.9
+    }
+  },
+  "holdout_period": "2025-09-30 to 2026-09-30",
+  "mae_reduction_vs_naive_pct": 32.7,
+  "holdout_worst_days": [
+    {
+      "date": "2026-08-02",
+      "actual": 25503,
+      "pred": 38929
+    },
+    {
+      "date": "2026-06-18",
+      "actual": 22316,
+      "pred": 34298
+    },
+    {
+      "date": "2026-02-11",
+      "actual": 13769,
+      "pred": 25251
+    }
+  ],
+  "top_features": [
+    [
+      "lag_7",
+      33.26
+    ],
+    [
+      "temp_max",
+      9.33
+    ],
+    [
+      "roll7_mean",
+      8.93
+    ],
+    [
+      "sunshine_h",
+      6.91
+    ],
+    [
+      "lag_14",
+      5.92
+    ]
+  ]
+}
